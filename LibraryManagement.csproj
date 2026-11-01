@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <!-- Check your SDK version in the terminal (see README). If it starts with 8 or 9, change BOTH lines below: net8.0 and 8.0.* (or net9.0 and 9.0.*). -->
+    <TargetFramework>net10.0</TargetFramework>
+    <EfVersion>10.0.*</EfVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="$(EfVersion)" />
+  </ItemGroup>
+
+</Project>
